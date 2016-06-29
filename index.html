@@ -11,6 +11,24 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '517326191790115',
+          xfbml      : true,
+          version    : 'v2.6'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
   </head>
   <body>
     <div class="wrapper">
@@ -24,7 +42,7 @@
           data-width="450"
           data-show-faces="true">
         </div>
-        
+
         <p class="view"><a href="https://github.com/jikotw74/What4Lunch">View the Project on GitHub <small>jikotw74/What4Lunch</small></a></p>
 
 
@@ -66,22 +84,6 @@
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId      : '517326191790115',
-          xfbml      : true,
-          version    : 'v2.6'
-        });
-      };
-
-      (function(d, s, id){
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) {return;}
-         js = d.createElement(s); js.id = id;
-         js.src = "//connect.facebook.net/en_US/sdk.js";
-         fjs.parentNode.insertBefore(js, fjs);
-       }(document, 'script', 'facebook-jssdk'));
-    </script>
+    
   </body>
 </html>
